@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2c2c;
+    color: wheat;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    margin-block-end: 24px;
+}
+
+#playerTurn {
+    margin: 12px auto;
+}
+
+#winner {
+    background-color: rgb(0, 149, 0);
+    padding: 6px 24px;
+    font-size: 20px;
+    color: black;
+    border-radius: 8px;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#reset {
+    margin: 24px auto;
+    background-color: gray;
+    color: black;
+    padding: 6px 16px;
+    cursor: pointer;
+}
